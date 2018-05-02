@@ -8,7 +8,7 @@ date: 2018-04-30 10:00:00
 tags: [Redux, JavaScript]
 class: post-template
 subclass: 'post tag-getting-started'
-author: Chidume Nnamdi
+author: chidumennamdi
 ---
 
 # Introduction
@@ -67,12 +67,15 @@ const store = createStore(booksReducer);
 ```
 With the `store` variable, we can add books to the store using the  dispatch function:
 ```js
-store.dispatch( { type: "ADD_BOOK", payload: { title: "Brutus" } } ) // adds a book, 'Brutus' to the store
+store.dispatch( { type: "ADD_BOOK", payload: { title: "Brutus" } } ) 
+
+// adds a book, 'Brutus' to the store
 ```
 
 To get books in our store, we can do this:
 ```js
-console.log(`Books: ${store.getState()}`) // outputs books in our store
+console.log(`Books: ${store.getState()}`) 
+// outputs books in our store
 ```
 Or we can listen in to events whenever a book is added:
 
