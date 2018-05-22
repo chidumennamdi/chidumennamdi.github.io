@@ -15,8 +15,8 @@ cover: assets/images/blog-cover.jpg
 logo: https://secure.gravatar.com/avatar/dbafebf712fa816299231d2763fd292e?s=500
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://jekyller.github.io/jasper2/
-source_url: https://github.com/jekyller/jasper2/
+production_url: https://chidumennamdi.github.io/
+source_url: https://github.com/chidumennamdi/chidumennamdi.github.io/
 
 # Social info
 navigation: True # show the navbar links
@@ -27,7 +27,7 @@ twitter: ngArchangel # replace by your username
 facebook: philip.david.5011 # replace by your username
 
 # Disqus
-disqus: False
+disqus: True
 disqus_shortname: jekyller # replace with your disqus username
 
 # Google Analytics
