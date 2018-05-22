@@ -13,7 +13,7 @@ author: chidumennamdi
 
 # Introduction
 
-This tutorial is a hands-on creation of the popular state management library, __Redux__.
+**TL;DR** This tutorial is a hands-on creation of the popular state management library, __Redux__.
 
 We will build our own clone of Redux. If you must know, Redux is a state management library for JavaScript apps. It actually combines all our app states into a store.
 
@@ -201,7 +201,7 @@ We won't need jest to be bundled alongside our redux library, that's the reason 
 ...
 ```
 
-We made `Jest` easier to invoke by using an NPM run script. By saving the command into `package.json` we don’t have to remember what it was and can instead invoke a shorthand version:
+We made `Jest` easier to invoke by using an NPM run script. By saving the command into `package.json` we donï¿½t have to remember what it was and can instead invoke a shorthand version:
 
 ```sh
 npm run test
@@ -316,12 +316,12 @@ Time:        35.629s
 Ran all test suites related to changed files.
 
 Watch Usage
- › Press a to run all tests.
- › Press f to run only failed tests.
- › Press p to filter by a filename regex pattern.
- › Press t to filter by a test name regex pattern.
- › Press q to quit watch mode.
- › Press Enter to trigger a test run.
+ ï¿½ Press a to run all tests.
+ ï¿½ Press f to run only failed tests.
+ ï¿½ Press p to filter by a filename regex pattern.
+ ï¿½ Press t to filter by a test name regex pattern.
+ ï¿½ Press q to quit watch mode.
+ ï¿½ Press Enter to trigger a test run.
 ```
 
 All our tests are run and `jest` waits idly watching for file change. Also, notice the command doesn't exist, so if you want to make changes to your project, you have to open another terminal.
@@ -492,7 +492,7 @@ describe('', () => {
     })
 })
 ```
-There are a few things we need to do to make this test case pass. First of all, the `createStore` needs to have some place to store all the listeners that have been registered. Let’s add an array for them:
+There are a few things we need to do to make this test case pass. First of all, the `createStore` needs to have some place to store all the listeners that have been registered. Letï¿½s add an array for them:
 
 ```js
 // src/createStore.js
@@ -504,7 +504,7 @@ export function createStore(reducer, preLoadedState) {
 ...
 }
 ```
-Now we can define the subscribe function. It’ll take the one function as argument, and store it in the listeners array:
+Now we can define the subscribe function. Itï¿½ll take the one function as argument, and store it in the listeners array:
 
 ```js
 // src/createStore.js
@@ -743,7 +743,7 @@ It will return an undefined state. But, the current state of an app should be al
 
 ```sh
  FAIL  test\createStore.spec.js (7.998s)
-  ? getState › should return the current state
+  ? getState ï¿½ should return the current state
 
     expect(received).toBeDefined()
 
