@@ -1324,7 +1324,9 @@ function render() {
 
 }
 ```
+
 Here, we write the code that will update and re-render the data on our UI:
+
 
 ```html
         function render() {
@@ -1350,6 +1352,7 @@ Here, we write the code that will update and re-render the data on our UI:
             selectedFruit$.innerHTML = selectedFruit
         }
 ```
+
 Here, we destructure todos and selectedFruit from the store. The render containers `fruitList` and `SelectedFruit` HTMLElement is stored, it will be used later to insert HTML code into them.
 
 Next, we looped through the todos variable and generate HTML string for each todo. In each HTML string, we added buttons with texts `RemoveFruit`, `SelectFruit` this buttons have events that calls funcions `removeFruit()` and `selectFruit()`. `removeFruit()` which is passed the current fruit index removes the fruit from the store by dispatching `REMOVE_FRUIT` action, `selectFruit` also passed in the current fruit, dispatches the `SELECT_FRUIT` action. We use `innerHTML` property to insert the final HTML string into the `fruitList` HTMLElement.
@@ -1362,6 +1365,7 @@ Now done with the `render` fucntion, we register it into our store as a subscrib
 ```
 
 Next we define all events in our buttons:
+
 
 ```html
         function addFruit() {
@@ -1388,6 +1392,7 @@ Next we define all events in our buttons:
 ```
 
 At the end, our entire app code will look like this:
+
 
 ```html
 <!-- examples/fruits.html-->
@@ -1497,6 +1502,7 @@ At the end, our entire app code will look like this:
 
 </html>
 ```
+
 Now we have a fully functional app using our Redux-clone we implemented from scratch as the state management library!!!
 
 # Conclusion
