@@ -28,7 +28,7 @@ facebook: philip.david.5011 # replace by your username
 
 # Disqus
 disqus: True
-disqus_shortname: jekyller # replace with your disqus username
+disqus_shortname: https-chidumennamdi-github-io # replace with your disqus username
 
 # Google Analytics
 google_analytics: UA-69281367-1 # replace with your GA tracking identifier
