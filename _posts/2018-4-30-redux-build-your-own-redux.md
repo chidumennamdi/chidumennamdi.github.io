@@ -316,12 +316,12 @@ Time:        35.629s
 Ran all test suites related to changed files.
 
 Watch Usage
- � Press a to run all tests.
- � Press f to run only failed tests.
- � Press p to filter by a filename regex pattern.
- � Press t to filter by a test name regex pattern.
- � Press q to quit watch mode.
- � Press Enter to trigger a test run.
+ - Press a to run all tests.
+ - Press f to run only failed tests.
+ - Press p to filter by a filename regex pattern.
+ - Press t to filter by a test name regex pattern.
+ - Press q to quit watch mode.
+ - Press Enter to trigger a test run.
 ```
 
 All our tests are run and `jest` waits idly watching for file change. Also, notice the command doesn't exist, so if you want to make changes to your project, you have to open another terminal.
@@ -492,7 +492,7 @@ describe('', () => {
     })
 })
 ```
-There are a few things we need to do to make this test case pass. First of all, the `createStore` needs to have some place to store all the listeners that have been registered. Let�s add an array for them:
+There are a few things we need to do to make this test case pass. First of all, the `createStore` needs to have some place to store all the listeners that have been registered. Let's add an array for them:
 
 ```js
 // src/createStore.js
@@ -504,7 +504,7 @@ export function createStore(reducer, preLoadedState) {
 ...
 }
 ```
-Now we can define the subscribe function. It�ll take the one function as argument, and store it in the listeners array:
+Now we can define the subscribe function. It'll take the one function as argument, and store it in the listeners array:
 
 ```js
 // src/createStore.js
@@ -743,7 +743,7 @@ It will return an undefined state. But, the current state of an app should be al
 
 ```sh
  FAIL  test\createStore.spec.js (7.998s)
-  ? getState � should return the current state
+  ? getState > should return the current state
 
     expect(received).toBeDefined()
 
