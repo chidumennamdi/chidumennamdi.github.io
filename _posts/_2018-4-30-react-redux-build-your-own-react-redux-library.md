@@ -71,3 +71,4 @@ cd react-redux
 mkdir test && mkdir src
 ```
 
+# Conclusion
